@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .container {
+        margin: 20px;
+      }
+      .contact-container {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="home.html"><img src="images/bgb_logo.png" alt=""></a>
+      </div>
+      <ul class="menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="meow.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="jumbotron" id="jumbotron">
+        <div class="container">
+          <div class="text-center">
+            <div class="col-md-12 text-center">
+              <h1 class="text-center">The delicious baked goods you love at Black Goose Bistro...now available to go!</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8 mx-auto">
+            <div class="jumbotron contact-container">
+              <div class="text-center">
+                <h2>Contact Us</h2>
+              </div>
+              <form id="feedbackForm" class="text-center">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Name" aria-describedby="nameHelp">
+                  <span id="nameHelp" class="form-text text-muted" style="display: none;">Please enter your name.</span>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" aria-describedby="emailHelp">
+                  <span id="emailHelp" class="form-text text-muted" style="display: none;">Please enter a valid e-mail address.</span>
+                </div>
+                <div class="form-group">
+                  <textarea rows="6" class="form-control" id="message" name="message" placeholder="Message" aria-describedby="messageHelp"></textarea>
+                  <span id="messageHelp" class="form-text text-muted" style="display: none;">Please enter a message.</span>
+                </div>
+                <button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>2023 Black Goose Bakery. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
